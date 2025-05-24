@@ -16,6 +16,11 @@ app.get('/first-branch', (req, res) => {
     res.json({ message: 'This is First Branch API!' });
 });
 
+app.get('/second-branch', (req, res) => {
+  res.json({ message: 'This is Second Branch API!' });
+});
+
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
