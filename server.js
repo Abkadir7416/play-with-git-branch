@@ -20,6 +20,10 @@ app.get('/second-branch', (req, res) => {
   res.json({ message: 'This is Second Branch API!' });
 });
 
+app.get('/third-branch', (req, res) => {
+  res.json({ message: 'This is third Branch API!' });
+});
+
 
 // Start server
 app.listen(PORT, () => {
